@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="MovieAssign.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MovieAssign"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="527" Width="593" >
+
+    <Grid Background="Bisque" HorizontalAlignment="Center" Width="575" BorderBrush="Black" BorderThickness="8" CornerRadius="14" Padding="12">
+        <TextBlock x:Name="blockPlayer" HorizontalAlignment="Left" Margin="209,25,0,0" Text="Login" TextWrapping="Wrap"   VerticalAlignment="Top" Width="129"  FontFamily="Cambria" Height="59" FontSize="45" />
+        <Button x:Name="NextPage" Content="Login" Margin="91,229,0,0" VerticalAlignment="Top" Height="49" Click="Button_Click" RenderTransformOrigin="-0.319,0.566" Width="170" />
+        <TextBox x:Name="username" HorizontalAlignment="Center" Margin="153,106,0,0" VerticalAlignment="Top" Height="36" Width="186" Grid.ColumnSpan="2" Grid.Column="1" />
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Center" Margin="156,167,0,0" VerticalAlignment="Top" Height="36" Width="186" Grid.ColumnSpan="2" Grid.Column="1"  />
+        <TextBlock x:Name="usernameText" HorizontalAlignment="Left" Margin="109,105,0,0" Text="UserName" TextWrapping="Wrap"   VerticalAlignment="Top" Width="136"  FontFamily="Cambria" Height="36" FontSize="30" RenderTransformOrigin="0.636,-0.401"  />
+        <TextBlock x:Name="passwordText" HorizontalAlignment="Left" Margin="109,165,0,0" Text="Password" TextWrapping="Wrap"   VerticalAlignment="Top" Width="133"  FontFamily="Cambria" Height="36" FontSize="30"  />
+
+        <TextBlock x:Name="Wrong" HorizontalAlignment="Left" Margin="138,360,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="85" FontSize="20" FontFamily="Cambria"/>
+        <Button x:Name="NotLog" Content="Continue Without Login" Margin="279,229,0,0" Height="49" Width="170"  Click="NotLog_Click" RenderTransformOrigin="0.463,-0.739" VerticalAlignment="Top"/>
+        <Button x:Name="AdminLog" Content="Login As Admin" Margin="91,294,0,0" VerticalAlignment="Top" Height="49" Width="170" Click="Admin_log"/>
+        <Button x:Name="RegisterNow" Content="Register Here" Margin="279,294,0,0" VerticalAlignment="Top" Height="49" Width="170"  Click="RegisterN"/>
+
+    </Grid>
+</Page>
